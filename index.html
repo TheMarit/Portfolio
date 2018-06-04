@@ -9,6 +9,8 @@
   <meta name="keywords" content="Marit, Fischer, Oliemans, WebDeveloper, JavaScript">
   <meta name="author" content="Marit Fischer">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -16,6 +18,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#435d68">
   <meta name="msapplication-TileColor" content="#eeeeee">
   <meta name="theme-color" content="#ffffff">
+  
 </head>
 <body>
 
@@ -47,7 +50,8 @@
             <li class="is-active"><span>Home</span></li>
             <li><span>About</span></li>
             <li><span>Skills</span></li>            
-            <li><span>Projects</span></li>
+            <li class="double-line"><span><div>WebDev Projects</div></span></li>
+            <li class="double-line"><span><div>Design Projects</div></span></li>
             <li><span>Contact</span></li>
             
           </ul>
@@ -92,9 +96,9 @@
               </div>
               
               <div>
-                <p>Hi, I'm a Web Developer from The Netherlands. I moved to Logan Utah because I love the outdoors. So when I'm not behind my computer you can usually find me in the mountains. I love hiking, climbing, backpacking, mountain biking, skiing and snowboarding.</p>
-                <p>I’ve started programming a few years ago. The first few months I taught myself with FreeCodeCamp in evenings and weekends next to my job but as I learned more and got excited about programming, I knew I wanted to change careers and started to code full time. I told my employer (cad2reality) where I was working as a Graphic Designer/3D modeler that I was learning to program and he put me in charge of creating a new website for the company. And that was the start of my career in development!</p>
-                <p> I’ve taken many online courses and done lots of projects since than, I have made a selection you can view in the Projects section. I enjoy helping others online as they start learning web development. </p>
+                <p>Hi, I'm a Web Developer from The Netherlands. I moved to Logan, Utah because I love the outdoors. When I'm not behind my computer, you can usually find me in the mountains. I love hiking, climbing, backpacking, mountain biking, skiing and snowboarding.</p>
+                <p>I started programming a few years ago. The first few months I taught myself with FreeCodeCamp in evenings and weekends next to my job. As I learned and got more excited about programming, I knew I wanted to change careers and started to code full time. I told my employer (cad2reality) where I was working as a Graphic Designer/3D modeler that I was learning to program and they put me in charge of creating a new website for the company. That was the start of my career in development!</p>
+                <p> I’ve taken many online courses and done lots of projects since then. I have made a selection you can view in the Projects section. I enjoy helping others online as they start learning web development. </p>
                 <p>I have a deep understanding of HTML, CSS and JavaScript and have worked with different frameworks like React and KnockoutJS.</p>
               </div>
             </div>
@@ -122,58 +126,91 @@
               </div>
           </li>
           <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="https://fast-everglades-35936.herokuapp.com/" target='_blank'>
-                      <div class="slider--item-image">
-                        <img src="assets/img/YelpCamp.png" alt="YelpCamp">
-                      </div>
-                      <p class="slider--item-title">YelpCamp</p>
-                      <p class="slider--item-description">Application made with NodeJS, ExpressJS, REST, MongoDB.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="https://themarit.github.io/HikingMap/" target='_blank'>
-                      <div class="slider--item-image">
-                        <img src="assets/img/HikingTrails.png" alt="Hiking Trails">
-                      </div>
-                      <p class="slider--item-title">Logan Hiking Trails</p>
-                      <p class="slider--item-description">Single Page Application. Made with KnockoutJS, Google Maps API, Hiking Project API and jQuery Plugin: Ion.RangeSlider</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="http://www.rallyclubaalsmeer.nl" target='_blank'>
-                      <div class="slider--item-image">
-                        <img src="assets/img/RallyClub.png" alt="RallyClub">
-                      </div>
-                      <p class="slider--item-title">Website RallyClubAalsmeer</p>
-                      <p class="slider--item-description">Single Page website made with HTML, CSS, jQuery, JavaScript</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
+              <div class="webdev">
+                  <div class="graphic--banner">
+                      <h2>WebDev Projects</h2>
+                    </div>
+                <div class="webdev-slider">
+                  
+                  <div>
+                    <img src='assets/img/RallyClub.png'>
+                  </div>
+                  <div>
+                    <img src='assets/img/HikingTrails.png'>
+                  </div>
+                  <div>
+                    <img src='assets/img/RESTblog.jpg'>
+                  </div>
+                  <div>
+                      <img src='assets/img/cad2reality.png'>
+                  </div>
+                  <div>
+                      <img src='assets/img/YelpCamp.png'>
+                    </div>
+                  <div>
+                      <img src='assets/img/tictactoe.png'>
+                  </div>
+                  <div>
+                      <img src='assets/img/simon.png'>
+                  </div>
+                  <div>
+                      <img src='assets/img/pomodoro.png'>
+                  </div>
                 </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
+                <div class="webdev-slider-desc">
+                    
+                    <div>
+                      <p class="slider-description">Website made with HTML, CSS, jQuery, JavaScript for Rally Club Aalsmeer</p>
+                      <div class="button-box"><a href="http://www.rallyclubaalsmeer.nl" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                      <p class="slider-description">Single Page Application. Made with KnockoutJS, Google Maps API, Hiking Project API and jQuery Plugin: Ion.RangeSlider</p>
+                      <div class="button-box"><a href="https://themarit.github.io/HikingMap/" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                      <p class="slider-description">Single Page Application made with NodeJS, ExpressJS, RESTfull routing, MongoDB</p>
+                      <div class="button-box"><a href="https://rocky-refuge-18479.herokuapp.com" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                        <p class="slider-description">Website made with Joomla for cad2reality a company specialized in full color 3D printing</p>
+                        <div class="button-box"><a href="https://www.cad2reality.com" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                        <p class="slider-description">Application made with NodeJS, ExpressJS, REST, MongoDB.</p>
+                        <div class="button-box"><a href="https://fast-everglades-35936.herokuapp.com/" target="_blank">See Live</a></div>
+                      </div>
+                    <div>
+                        <p class="slider-description">Tic Tac Toe</p>
+                        <div class="button-box"><a href="https://codepen.io/TheMarit/full/wyxRXQ/" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                        <p class="slider-description">Simon Game Clone</p>
+                        <div class="button-box"><a href="https://codepen.io/TheMarit/full/paXyzg/" target="_blank">See Live</a></div>
+                    </div>
+                    <div>
+                        <p class="slider-description">Pomodoro Clock</p>
+                        <div class="button-box"><a href="https://codepen.io/TheMarit/full/aqqQRW/" target="_blank">See Live</a></div>
+                    </div>
+                  </div>
+              </div>
+            </li>
+          <li class="l-section section">
+            <div class="graphic">
+                <div class="graphic--banner">
+                    <h2>Graphic Design Work</h2>
+                  </div>
+              <div class="graphic-slider">
+                <div><img src='assets/img/graphic/Anna.jpg'></div>
+                <div><img src='assets/img/graphic/Arco.jpg'></div>
+                <div><img src='assets/img/graphic/gemeente.jpg'></div>
+                <div><img src='assets/img/graphic/weddingInv.jpg'></div>
+                <div><img src='assets/img/graphic/honeyLabel.jpg'></div>
+                <div><img src='assets/img/graphic/anna2.jpg'></div>
+                <div><img src='assets/img/graphic/IPAclub.jpg'></div>
               </div>
             </div>
           </li>
+          
           <li class="l-section section">
             <div class="contact">
               <div class="contact--lockup">
@@ -184,8 +221,8 @@
                     <a href="tel:+14352565792">+1 435 256 5792</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="https://www.linkedin.com/in/marit-oliemans/"><img src="assets/img/linkedin.svg"> LinkedIn</a></li>
-                    <li><a href="https://github.com/TheMarit"><img src="assets/img/github.svg">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/marit-oliemans/" target="_blank"><img src="assets/img/linkedin.svg"> LinkedIn</a></li>
+                    <li><a href="https://github.com/TheMarit" target="_blank"><img src="assets/img/github.svg">Github</a></li>
                     <li><a href="mailto:maritoliemans@hotmail.com">Contact Me</a></li>
                   </ul>
                 </div>
@@ -201,13 +238,16 @@
     <li class="is-active">Home</li>
     <li>About</li>
     <li>Skills</li>    
-    <li>Projects</li>
+    <li>WebDev Projects</li>
+    <li>Design Projects</li>
     <li>Contact</li>
   </ul>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script  src="assets/slick/slick.min.js"></script>
 <script src="assets/js/functions-min.js"></script>
+<script src="assets/slick/slickSlider.js"></script>
 </body>
 </html>
